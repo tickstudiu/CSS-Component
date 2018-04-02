@@ -5,6 +5,8 @@
     <link rel="stylesheet" type="text/css" href="./flex-gallery/flex-gallery.css">
     <link rel="stylesheet" type="text/css" href="./jumbotron-with-gallery/jumbotron-with-gallery.css">
 
+    <link href='https://fonts.googleapis.com/css?family=Kanit&subset=thai,latin' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="./assets/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="./assets/bootstrap/css/bootstrap-grid.css">
@@ -17,23 +19,26 @@
 <body data-spy="scroll" data-target=".side-navbar">
 <div class="container my-2">
     <nav class="nav justify-content-end">
-        <a class="nav-link m-0 px-1 text-dark" href="#">ENG</a>
-        <a class="nav-link m-0 px-1 text-dark disabled" href="#">TH</a>
+        <a class="nav-link m-0 px-1" href="#">TH</a>
+        <a class="nav-link m-0 px-1 disabled" href="#">ENG</a>
     </nav>
 </div>
 
 <div class="container my-4">
     <div class="row">
         <!-- main content -->
-        <div class="col-md-10">
+        <div class="col-lg-10 col-sm-12">
             <section id="text-switch">
                 <h1 class="display-4">Text-switch</h1>
                 <hr class="my-1"/>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="lead-th">ได้รับแรงบันดานใจมาก เว็บ <a href="https://codepen.io/">codepen</a> ของคุณ <a
+                        href="https://codepen.io/yemon/"> Nooray Yemon</a>
+                    จากที่ได้สักเกตเห็นว่าตัวโค้ดสามารถเอามาประยุคต์ให้สามารถเขียนได้ง่ายมากขึ้นทางทีมผู้พัฒนาจึงได้ทำการเขียนโค้ดใหม่ให้เข้าใจง่ายมากขึ้นจากเดิม
+                </p>
+                <p class="lead-th">
+                    หากเพื่อน ๆ ได้สังเกตทางทีมงานยังคงใช้งาน bootstrap ใช้การช่วยในการพัฒนาทั้งนี้ด้วยเหตุผลที่ว่า
+                    จะได้ลดการเขียน css ด้วยตนเอง และคำสั่งที่ทีมงานยังเป็นคำสั่งพื้นฐานของ css
+                </p>
                 <h5 class="m-0 bg-dark text-white p-2">html</h5>
                 <pre class="code-section">
                     <code>
@@ -111,6 +116,16 @@
     }
                     </code>
                 </pre>
+                <p class="lead-th">
+                    จาก code ที่่แสดงข้างบน หัวใจที่ทำให้ตัว component นี้ต่างจาก component อื่นคือ การใช้คำสั่ง
+                    overflow และ animation ในการทำงานของ component โดยหลักการทำงานของ <span class="text-danger">component text-switch</span>
+                    มาจาก class <span class="text-success">.text-switch-body</span> คำสั่ง <code>overflow:
+                    hidden;</code> ความหมายคือ เมื่อขนาดของวัตถุข้างในใหญ่กว่าขนาดของ <span class="text-success">.text-switch-body</span>
+                    จะทำการแอบส่วนที่เกินเอาไว้ โดยค่าเริ่มต้นของ <span class="text-success">.text-switch-body</span>
+                    มีส่วนสูงเท่ากับ <span class="text-primary">35px</span> เท่ากับข้านของ <code>line-height</code> และ
+                    <code>font-size</code> เพื่อเมื่อให้การสร้าง animation ง่ายมากขึ้น
+                </p>
+
                 <h5 class="m-0 bg-dark text-white p-2">examples</h5>
                 <div>
                     <div class="text-center text-switch">
@@ -323,7 +338,7 @@
         </div>
 
         <!-- side bar -->
-        <div class="col-md-2">
+        <div class="col-lg-2 col-md-auto">
             <div class="position-fixed side-navbar">
                 <p class="lead m-0">component</p>
                 <div class="d-flex flex-wrap pl-3 my-2">
