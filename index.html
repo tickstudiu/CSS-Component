@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./text-switch/text-switch.css">
+    <link rel="stylesheet" type="text/css" href="./flex-gallery/flex-gallery.css">
+    <link rel="stylesheet" type="text/css" href="./jumbotron-with-gallery/jumbotron-with-gallery.css">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./assets/bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="./assets/bootstrap/css/bootstrap-reboot.css">
+
+    <script type="text/javascript" src="./assets/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="./assets/jquery/jquery-3.3.1.min.js"></script>
+    <title>css.component</title>
+</head>
+<body data-spy="scroll" data-target=".side-navbar">
+<div class="container my-2">
+    <nav class="nav justify-content-end">
+        <a class="nav-link m-0 px-1 text-dark" href="#">ENG</a>
+        <a class="nav-link m-0 px-1 text-dark disabled" href="#">TH</a>
+    </nav>
+</div>
+
+<div class="container my-4">
+    <div class="row">
+        <!-- main content -->
+        <div class="col-md-10">
+            <section id="text-switch">
+                <h1 class="display-4">Text-switch</h1>
+                <hr class="my-1"/>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h5 class="m-0 bg-dark text-white p-2">html</h5>
+                <pre class="code-section">
+                    <code>
+    &lt;div class="text-center text-switch"&gt;
+        header text
+
+        &lt;div class="text-switch-body"&gt;
+            &lt;div class="text-switch-box"&gt;
+
+                body text
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        footer text
+    &lt;/div&gt;
+                    </code>
+                </pre>
+                <h5 class="m-0 bg-dark text-white p-2">css</h5>
+                <pre class="code-section">
+                    <code>
+    .text-switch{
+        width: 30%;
+        margin: 0 auto;
+        font-size: 3.5rem; /* same size */
+    }
+
+    .text-switch-body{
+        overflow: hidden;
+        height: 3.5rem; /* same size */
+    }
+
+    .text-switch-box{
+        -webkit-animation: text_switch 5s infinite; /* Chrome, Safari, Opera */
+        animation: text_switch 5s infinite;
+        margin-top: 0;
+    }
+
+    .text-switch-body p{
+        line-height: 3.5rem; /* same size */
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes text_switch {
+        0% {
+            margin-top: 0;
+        }
+        25% {
+            margin-top: -3.5rem;
+        }
+        75%{
+            margin-top: -7.0rem;
+        }
+        100%{
+            margin-top: 0;
+        }
+    }
+
+    /* Standard syntax */
+    @keyframes text_switch {
+        0% {
+            margin-top: 0;
+        }
+        25% {
+            margin-top: -3.5rem;
+        }
+        75%{
+            margin-top: -7.0rem;
+        }
+        100%{
+            margin-top: 0;
+        }
+    }
+                    </code>
+                </pre>
+                <h5 class="m-0 bg-dark text-white p-2">examples</h5>
+                <div>
+                    <div class="text-center text-switch">
+                        Make
+                        <div class="text-switch-body">
+                            <div class="text-switch-box">
+                                <p class="text-white bg-dark">text</p>
+                                <p class="text-white bg-warning">switch</p>
+                                <p class="text-white bg-danger">with</p>
+                            </div>
+                        </div>
+                        CSS
+                    </div>
+                </div>
+            </section>
+
+            <section class="mt-4" id="flex-gallery">
+                <h1 class="display-4">Flex-gallery</h1>
+                <hr class="my-1"/>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h5 class="m-0 bg-dark text-white p-2">html</h5>
+                <pre class="code-section">
+                    <code>
+    &lt;div class="d-flex flex-column flex-gallery"&gt;
+        &lt;div class="d-flex flex-row"&gt;
+            &lt;div class="gallery-box"&gt;
+
+                img here...
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                    </code>
+                </pre>
+
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <h5 class="m-0 bg-dark text-white p-2">css</h5>
+                <pre class="code-section">
+                    <code>
+    .flex-gallery{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: auto;
+    }
+
+    .gallery-box{
+        flex: 2;
+        height: 300px;
+        margin: 0;
+        padding: 0;
+        opacity: 0.4;
+        transition: all .5s;
+    }
+
+    .gallery-box-small{
+        flex: 1;
+        height: 300px;
+        margin: 0;
+        padding: 0;
+        opacity: 0.4;
+        transition: all .5s;
+    }
+
+    .gallery-box-large{
+        flex: 2.5;
+        height: 300px;
+        margin: 0;
+        padding: 0;
+        opacity: 0.4;
+        transition: all .5s;
+    }
+
+
+    .gallery-box-large:hover, .gallery-box-small:hover, .gallery-box:hover{
+        flex: 3;
+        opacity: 1;
+    }
+                    </code>
+                </pre>
+                <h5 class="m-0 bg-dark text-white p-2">examples</h5>
+                <div>
+                    <div class="d-flex flex-column flex-gallery">
+                        <div class="d-flex flex-row">
+                            <div class="bg-dark gallery-box"></div>
+                            <div class="bg-warning gallery-box-small"></div>
+                            <div class="bg-danger gallery-box"></div>
+                            <div class="bg-secondary gallery-box-large"></div>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <div class="bg-warning gallery-box"></div>
+                            <div class="bg-dark gallery-box-large"></div>
+                            <div class="bg-secondary gallery-box"></div>
+                            <div class="bg-danger gallery-box"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mt-4" id="jumbotron-with-gallery">
+                <h1 class="display-4">Jumbotron-with-gallery</h1>
+                <hr class="my-1"/>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h5 class="m-0 bg-dark text-white p-2">html</h5>
+                <pre class="code-section">
+                    <code>
+    &lt;div class="row"&gt;
+        &lt;div class="col-md-6 p-5"&gt;
+            &lt;h1 class="text-danger display-2 font-weight-bold text-uppercase"&gt;header&lt;/h1&gt;
+            &lt;h1 class="text-dark display-4 font-weight-bold"&gt;sub header&lt;/h1&gt;
+            &lt;p class="lead"&gt;text here...&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class="col-md-6 p-5"&gt;
+            &lt;div class="position-relative"&gt;
+                &lt;div class="position-absolute w-100 h-100"&gt;
+                    &lt;div class="jumbotron-gallery"&gt;
+
+                        &lt;h1&gt;header&lt;/h1&gt;
+                        &lt;p class="lead"&gt;text here...&lt;/p&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;img src="..." class="img-fluid"&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                    </code>
+                </pre>
+
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <h5 class="m-0 bg-dark text-white p-2">css</h5>
+                <pre class="code-section">
+                    <code>
+    .jumbotron-gallery, .jumbotron-gallery h5, .jumbotron-gallery p{
+        transition: all 0.5s;
+    }
+
+    .jumbotron-gallery{
+        text-align: center;
+        padding: 25% 0;
+        width: 100%;
+        height: 100%;
+        color: white;
+    }
+
+    .jumbotron-gallery:hover{
+        background: rgba(0,0,0,0.4);
+        outline: 4px solid #fff;
+        outline-offset: -50px;
+    }
+
+    .jumbotron-gallery:hover > h5{
+        margin-top: -5%;
+    }
+
+    .jumbotron-gallery p{
+        opacity: 0;
+    }
+
+    .jumbotron-gallery:hover > p{
+        opacity: 1;
+    }
+                    </code>
+                </pre>
+                <h5 class="m-0 bg-dark text-white p-2">examples</h5>
+                <div>
+                    <div class="row">
+                        <div class="col-md-6 p-5">
+                            <h1 class="text-danger display-2 font-weight-bold text-uppercase">header</h1>
+                            <h1 class="text-dark display-4 font-weight-bold">sub header</h1>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="position-relative">
+                                <div class="position-absolute w-100 h-100">
+                                    <div class="jumbotron-gallery">
+                                        <h5 class="text-uppercase">header</h5>
+                                        <p>incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/800x800.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- side bar -->
+        <div class="col-md-2">
+            <div class="position-fixed side-navbar">
+                <p class="lead m-0">component</p>
+                <div class="d-flex flex-wrap pl-3 my-2">
+                    <a href="#text-switch" class="w-100">Text-switch</a>
+                    <a href="#flex-gallery" class="w-100">Flex-gallery</a>
+                    <a href="#jumbotron-with-gallery" class="w-100">Jumbotron-with-gallery</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

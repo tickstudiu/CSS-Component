@@ -1,0 +1,5 @@
+.code-section{
+    background: #eff0f1;
+    overflow-y: scroll;
+    max-height: 300px;
+}

@@ -1,0 +1,29 @@
+.jumbotron-gallery, .jumbotron-gallery h5, .jumbotron-gallery p{
+    transition: all 0.5s;
+}
+
+.jumbotron-gallery{
+    text-align: center;
+    padding: 25% 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.jumbotron-gallery:hover{
+    background: rgba(0,0,0,0.4);
+    outline: 4px solid #fff;
+    outline-offset: -50px;
+}
+
+.jumbotron-gallery:hover > h5{
+    margin-top: -5%;
+}
+
+.jumbotron-gallery p{
+    opacity: 0;
+}
+
+.jumbotron-gallery:hover > p{
+    opacity: 1;
+}

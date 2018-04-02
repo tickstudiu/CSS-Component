@@ -1,0 +1,54 @@
+.text-switch{
+	width: 30%;
+	margin: 0 auto;
+	font-size: 3.5rem; /* same size */
+}
+
+.text-switch-body{
+	overflow: hidden;
+	height: 3.5rem; /* same size */
+}
+
+.text-switch-box{
+	-webkit-animation: text_switch 5s infinite; /* Chrome, Safari, Opera */
+    animation: text_switch 5s infinite;
+	margin-top: 0; 
+}
+
+.text-switch-body p{
+	line-height: 3.5rem; /* same size */
+	padding: 0;
+	margin: 0;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes text_switch {
+	0% {
+		margin-top: 0; 
+	}
+    25% {
+    	margin-top: -3.5rem; 
+    }
+    75%{
+    	margin-top: -7.0rem;
+    }
+    100%{
+    	margin-top: 0;
+    }
+}
+
+/* Standard syntax */
+@keyframes text_switch {
+	0% {
+		margin-top: 0; 
+	}
+    25% {
+    	margin-top: -3.5rem; 
+    }
+    75%{
+    	margin-top: -7.0rem;
+    }
+    100%{
+    	margin-top: 0;
+    }
+}
