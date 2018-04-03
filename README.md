@@ -1,14 +1,12 @@
 # Css Component
 
-โปรเจคที่รวบรวม component จากหลายแหน่งเอาไว้โดยมีพื้นฐานจาก bootstrap 4.0.0 และ jquery 3.3.1 ทางทีมจากจะใช้งานสองอย่างนี้เป็นหลักในการพัฒนา เพื่อให้ง่ายต่อการพัฒนามากขึ้น ทุก component ได้รับแรงบันดาลจาก [codepen](https://codepen.io/) [free-css.com](http://www.free-css.com/) และ [os-templates.com](http://www.os-templates.com/free-website-templates) ด้วยเหตุนี้ทำให้ component ใน [Css component](https://github.com/tickstudiu/css-component) จึงมีความคล้ายคลึง กับเว็บเหล่านั้น
+โปรเจคที่รวบรวม component จากหลายแห่งเอาไว้โดยมีพื้นฐานจาก **bootstrap 4.0.0** และ **jquery 3.3.1** ทางทีมได้ใช้งานสองอย่างนี้เป็นหลักในการพัฒนา เพื่อให้ง่ายต่อการพัฒนามากขึ้น ทุก component ได้รับแรงบันดาลจาก [codepen](https://codepen.io/) [free-css.com](http://www.free-css.com/) และ [os-templates.com](http://www.os-templates.com/free-website-templates) ด้วยเหตุนี้ทำให้ component ใน [Css component](https://github.com/tickstudiu/css-component) จึงมีความคล้ายคลึง กับเว็บเหล่านั้น
 
 ## Getting Started
 
-จากที่กล่าวที่
-
 ### Prerequisites
 
-What things you need to install the software and how to install them
+จากที่กล่าวไปข้าต้นดังนั้นเราจำเป็นต้องทำการโหลดไฟล์ **bootstrap 4.0.0** และ **jquery 3.3.1** ก่อน
 
 ```
 Give examples
@@ -32,44 +30,6 @@ until finished
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
 ## Authors
 
 * **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
@@ -79,9 +39,3 @@ See also the list of [contributors](https://github.com/your/project/contributors
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
