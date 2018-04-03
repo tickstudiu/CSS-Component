@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" type="text/css" href="./text-switch/text-switch.css">
-    <link rel="stylesheet" type="text/css" href="./flex-gallery/flex-gallery.css">
-    <link rel="stylesheet" type="text/css" href="./jumbotron-with-gallery/jumbotron-with-gallery.css">
-    <link rel="stylesheet" type="text/css" href="./img-zoom/img-zoom.css">
-    <link rel="stylesheet" type="text/css" href="./jumbotron-with-img-list/jumbotron-with-img-list.css">
+    <link rel="stylesheet" type="text/css" href="./components/text-switch/text-switch.css">
+    <link rel="stylesheet" type="text/css" href="./components/flex-gallery/flex-gallery.css">
+    <link rel="stylesheet" type="text/css" href="./components/jumbotron-with-gallery/jumbotron-with-gallery.css">
+    <link rel="stylesheet" type="text/css" href="./components/img-zoom/img-zoom.css">
+    <link rel="stylesheet" type="text/css" href="./components/jumbotron-with-img-list/jumbotron-with-img-list.css">
 
     <link href='https://fonts.googleapis.com/css?family=Kanit&subset=thai,latin' rel='stylesheet' type='text/css'>
 
@@ -48,17 +48,15 @@
                 <h5 class="m-0 bg-dark text-white p-2">html</h5>
                 <pre class="code-section">
                     <code>
-    &lt;div class="text-center text-switch"&gt;
+    &lt;div class="text-switch"&gt;
         header text
-
         &lt;div class="text-switch-body"&gt;
             &lt;div class="text-switch-box"&gt;
-
-                body text
-
+                &lt;p&gt;text here...&lt;/p&gt;
+                &lt;p&gt;text here...&lt;/p&gt;
+                &lt;p&gt;text here...&lt;/p&gt;
             &lt;/div&gt;
         &lt;/div&gt;
-
         footer text
     &lt;/div&gt;
                     </code>
@@ -69,6 +67,7 @@
     .text-switch{
         width: 30%;
         margin: 0 auto;
+        text-align: center;
         font-size: 3.5rem; /* same size */
     }
 
@@ -163,7 +162,9 @@
         &lt;div class="d-flex flex-row"&gt;
             &lt;div class="gallery-box"&gt;
 
-                img here...
+                &lt;div class="gallery-box"&gt;
+                     &lt;img src="..." class="w-100 h-100"&gt;
+                &lt;/div&gt;
 
             &lt;/div&gt;
         &lt;/div&gt;
@@ -225,7 +226,7 @@
                 <div>
                     <div class="d-flex flex-column flex-gallery">
                         <div class="d-flex flex-row">
-                            <div class="bg-dark gallery-box"></div>
+                            <div class="bg-dark gallery-box-large"></div>
                             <div class="bg-warning gallery-box-small"></div>
                             <div class="bg-danger gallery-box"></div>
                             <div class="bg-secondary gallery-box-large"></div>
@@ -451,30 +452,30 @@
                     <code>
     &lt;div class="jumbotron-img-list"&gt;
         &lt;div class="row"&gt;
-            &lt;div class="col-6 col-md"&gt;
+            &lt;div class="col-md-3 col-sm-12"&gt;
                 &lt;div class="jumbotron-img-list-text-card"&gt;
                     &lt;h4>header&lt;/h4&gt;
                     &lt;p>text here...&lt;/p&gt;
                 &lt;/div&gt;
             &lt;/div&gt;
-            &lt;div class="col-6 col-md"&gt;
-                &lt;div class="jumbotron-img-list-card" style="background: url(...)"&gt;
+            &lt;div class="col-md-3 col-sm-12"&gt;
+                &lt;div class="jumbotron-img-list-card bg-1"&gt;
                     &lt;h5&gt;top header&lt;/h5&gt;
                     &lt;h4&gt;header&lt;/h4&gt;
                     &lt;p&gt;text herer..&lt;/p&gt;
                 &lt;/div&gt;
             &lt;/div&gt;
 
-            &lt;div class="col-6 col-md"&gt;
-                &lt;div class="jumbotron-img-list-card" style="background: url(...)"&gt;
+            &lt;div class="col-md-3 col-sm-12"&gt;
+                &lt;div class="jumbotron-img-list-card bg-2"&gt;
                     &lt;h5&gt;top header&lt;/h5&gt;
                     &lt;h4&gt;header&lt;/h4&gt;
                     &lt;p&gt;text herer..&lt;/p&gt;
                 &lt;/div&gt;
             &lt;/div&gt;
 
-            &lt;div class="col-6 col-md"&gt;
-                &lt;div class="jumbotron-img-list-card" style="background: url(...)"&gt;
+            &lt;div class="col-md-3 col-sm-12"&gt;
+                &lt;div class="jumbotron-img-list-card bg-3"&gt;
                     &lt;h5&gt;top header&lt;/h5&gt;
                     &lt;h4&gt;header&lt;/h4&gt;
                     &lt;p&gt;text herer..&lt;/p&gt;
@@ -501,6 +502,11 @@
         color: #fff;
     }
 
+    .jumbotron-img-list-text-card{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
     .jumbotron-img-list-text-card h4{
         font-weight: 700;
         text-transform: uppercase;
@@ -515,6 +521,32 @@
 
     .jumbotron-img-list-card{
         padding: 0.5rem;
+        transition: all 0.75s;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .bg-1{
+        background: url(../assets/img/400x600-aquarium.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .bg-2{
+        background: url(../assets/img/400x600-forest.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .bg-3{
+        background: url(../assets/img/400x600-sea.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .jumbotron-img-list-card:hover{
+        box-shadow: 0 10px 9px rgba(0,0,0,0.3);
+        transform: translateY(-4%);
     }
 
     .jumbotron-img-list-card h5{
@@ -535,16 +567,15 @@
                 <div>
                     <div class="jumbotron-img-list">
                         <div class="row">
-                            <div class="col-6 col-md">
+                            <div class="col-md-3 col-sm-12">
                                 <div class="jumbotron-img-list-text-card">
                                     <h4>header</h4>
                                     <p>Far far away, behind the word mountains, far from the countries
                                         Vokalia and</p>
                                 </div>
                             </div>
-                            <div class="col-6 col-md">
-                                <div class="jumbotron-img-list-card"
-                                     style="background: url(./assets/img/400x600-aquarium.jpg)">
+                            <div class="col-md-3 col-sm-12">
+                                <div class="jumbotron-img-list-card bg-1">
                                     <section>
                                         <h5>Illustration</h5>
                                         <h4>45 Minimal Works space Rooms for Web Savvys</h4>
@@ -553,18 +584,16 @@
                                     </section>
                                 </div>
                             </div>
-                            <div class="col-6 col-md">
-                                <div class="jumbotron-img-list-card"
-                                     style="background: url(./assets/img/400x600-forest.jpg)">
+                            <div class="col-md-3 col-sm-12">
+                                <div class="jumbotron-img-list-card bg-2">
                                     <h5>Illustration</h5>
                                     <h4>45 Minimal Works space Rooms for Web Savvys</h4>
                                     <p>Far far away, behind the word mountains, far from the countries
                                         Vokalia and</p>
                                 </div>
                             </div>
-                            <div class="col-6 col-md">
-                                <div class="jumbotron-img-list-card"
-                                     style="background: url(./assets/img/400x600-sea.jpg)">
+                            <div class="col-md-3 col-sm-12">
+                                <div class="jumbotron-img-list-card bg-3">
                                     <h5>Illustration</h5>
                                     <h4>45 Minimal Works space Rooms for Web Savvys</h4>
                                     <p>Far far away, behind the word mountains, far from the countries

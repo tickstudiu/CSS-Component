@@ -5,6 +5,11 @@
     color: #fff;
 }
 
+.jumbotron-img-list-text-card{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
 .jumbotron-img-list-text-card h4{
     font-weight: 700;
     text-transform: uppercase;
@@ -20,6 +25,26 @@
 .jumbotron-img-list-card{
     padding: 0.5rem;
     transition: all 0.75s;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.bg-1{
+    background: url(../../assets/img/400x600-aquarium.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-2{
+    background: url(../../assets/img/400x600-forest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-3{
+    background: url(../../assets/img/400x600-sea.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .jumbotron-img-list-card:hover{

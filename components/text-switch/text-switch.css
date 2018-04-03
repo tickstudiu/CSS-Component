@@ -1,6 +1,7 @@
 .text-switch{
 	width: 30%;
 	margin: 0 auto;
+	text-align: center;
 	font-size: 3.5rem; /* same size */
 }
 
