@@ -1,10 +1,10 @@
 # Css Component
 
-โปรเจคที่รวบรวม component จากหลายแหน่งเอาไว้โดยมีพื้นฐานจาก bootstrap 4.0.0 และ jquery 3.3.1 ทางทีมจากจะใช้งานสองอย่างนี้เป็นหลักในการพัฒนา เพื่อให้ง่ายต่อการพัฒนามากขึ้น ทุก component ได้รับแรงบันดาลจาก [codepen](https://codepen.io/) [free-css.com](http://www.free-css.com/) และ [os-templates.com](http://www.os-templates.com/free-website-templates) ด้วยเหตุนี้ทำให้ component ใน Css component จึงมีความคล้ายคลึง กับเว็บเหล่านั้น
+โปรเจคที่รวบรวม component จากหลายแหน่งเอาไว้โดยมีพื้นฐานจาก bootstrap 4.0.0 และ jquery 3.3.1 ทางทีมจากจะใช้งานสองอย่างนี้เป็นหลักในการพัฒนา เพื่อให้ง่ายต่อการพัฒนามากขึ้น ทุก component ได้รับแรงบันดาลจาก [codepen](https://codepen.io/) [free-css.com](http://www.free-css.com/) และ [os-templates.com](http://www.os-templates.com/free-website-templates) ด้วยเหตุนี้ทำให้ component ใน [Css component](https://github.com/tickstudiu/css-component) จึงมีความคล้ายคลึง กับเว็บเหล่านั้น
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+จากที่กล่าวที่
 
 ### Prerequisites
 
