@@ -2,7 +2,7 @@
     font-family: 'Kanit', sans-serif;
 }
 
-.code-section{
+.code-section {
     background: #eff0f1;
     overflow-y: scroll;
     max-height: 300px;
