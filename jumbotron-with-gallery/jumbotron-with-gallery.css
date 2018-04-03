@@ -13,7 +13,7 @@
 .jumbotron-gallery:hover{
     background: rgba(0,0,0,0.4);
     outline: 4px solid #fff;
-    outline-offset: -50px;
+    outline-offset: -2vw;
 }
 
 .jumbotron-gallery:hover > h5{
@@ -22,6 +22,8 @@
 
 .jumbotron-gallery p{
     opacity: 0;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .jumbotron-gallery:hover > p{

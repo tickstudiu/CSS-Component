@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <link rel="stylesheet" type="text/css" href="./text-switch/text-switch.css">
     <link rel="stylesheet" type="text/css" href="./flex-gallery/flex-gallery.css">
     <link rel="stylesheet" type="text/css" href="./jumbotron-with-gallery/jumbotron-with-gallery.css">
+    <link rel="stylesheet" type="text/css" href="./img-zoom/img-zoom.css">
+    <link rel="stylesheet" type="text/css" href="./jumbotron-with-img-list/jumbotron-with-img-list.css">
 
     <link href='https://fonts.googleapis.com/css?family=Kanit&subset=thai,latin' rel='stylesheet' type='text/css'>
 
@@ -28,6 +33,7 @@
     <div class="row">
         <!-- main content -->
         <div class="col-lg-10 col-sm-12">
+
             <section id="text-switch">
                 <h1 class="display-4">Text-switch</h1>
                 <hr class="my-1"/>
@@ -246,7 +252,7 @@
                 <pre class="code-section">
                     <code>
     &lt;div class="row"&gt;
-        &lt;div class="col-md-6 p-5"&gt;
+        &lt;div class="col-md-6 p-lg-5 p-md-2"&gt;
             &lt;h1 class="text-danger display-2 font-weight-bold text-uppercase"&gt;header&lt;/h1&gt;
             &lt;h1 class="text-dark display-4 font-weight-bold"&gt;sub header&lt;/h1&gt;
             &lt;p class="lead"&gt;text here...&lt;/p&gt;
@@ -314,7 +320,7 @@
                 <h5 class="m-0 bg-dark text-white p-2">examples</h5>
                 <div>
                     <div class="row">
-                        <div class="col-md-6 p-5">
+                        <div class="col-md-6 p-lg-5 p-md-2">
                             <h1 class="text-danger display-2 font-weight-bold text-uppercase">header</h1>
                             <h1 class="text-dark display-4 font-weight-bold">sub header</h1>
                             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -335,6 +341,241 @@
                     </div>
                 </div>
             </section>
+            <!--
+            <section class="mt-4" id="timeline">
+                <h1 class="display-4">Timeline</h1>
+                <hr class="my-1"/>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h5 class="m-0 bg-dark text-white p-2">html</h5>
+                <pre class="code-section">
+                    <code>
+
+                    </code>
+                </pre>
+
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <h5 class="m-0 bg-dark text-white p-2">css</h5>
+                <pre class="code-section">
+                    <code>
+
+                    </code>
+                </pre>
+                <h5 class="m-0 bg-dark text-white p-2">examples</h5>
+                <div>
+
+                </div>
+            </section>
+            -->
+            <section class="mt-4" id="img-zoom">
+                <h1 class="display-4">Img-zoom</h1>
+                <hr class="my-1"/>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h5 class="m-0 bg-dark text-white p-2">html</h5>
+                <pre class="code-section">
+                    <code>
+    &lt;div class="img-zoom position-relative"&gt;
+        &lt;div class="img-zoom-body position-absolute d-flex w-100 h-100 justify-content-center align-items-center"&gt;
+            &lt;h2 class="display-4 font-weight-bold text-white"&gt;Text here..&lt;/h2&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                    </code>
+                </pre>
+
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <h5 class="m-0 bg-dark text-white p-2">css</h5>
+                <pre class="code-section">
+                    <code>
+    .img-zoom{
+        overflow: hidden;
+        width: 100%;
+        height: 800px;
+        background: url(../assets/img/800x800.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 130% 130%;
+        transition: all 0.5s;
+    }
+
+    .img-zoom:hover{
+        background-size: 100% 100%;
+    }
+
+    .img-zoom-body{
+        background: rgba(0,0,0,0.4);
+        transition: all 0.75s;
+    }
+
+    .img-zoom:hover > .img-zoom-body{
+        background: rgba(0,0,0,0);
+    }
+                    </code>
+                </pre>
+                <h5 class="m-0 bg-dark text-white p-2">examples</h5>
+                <div>
+                    <div class="img-zoom position-relative">
+                        <div class="img-zoom-body position-absolute d-flex w-100 h-100 justify-content-center align-items-center">
+                            <h2 class="display-4 font-weight-bold text-white">Text here..</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mt-4" id="jumbotron-img-list">
+                <h1 class="display-4">Jumbotron-img-listt</h1>
+                <hr class="my-1"/>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h5 class="m-0 bg-dark text-white p-2">html</h5>
+                <pre class="code-section">
+                    <code>
+    &lt;div class="jumbotron-img-list"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-6 col-md"&gt;
+                &lt;div class="jumbotron-img-list-text-card"&gt;
+                    &lt;h4>header&lt;/h4&gt;
+                    &lt;p>text here...&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="col-6 col-md"&gt;
+                &lt;div class="jumbotron-img-list-card" style="background: url(...)"&gt;
+                    &lt;h5&gt;top header&lt;/h5&gt;
+                    &lt;h4&gt;header&lt;/h4&gt;
+                    &lt;p&gt;text herer..&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="col-6 col-md"&gt;
+                &lt;div class="jumbotron-img-list-card" style="background: url(...)"&gt;
+                    &lt;h5&gt;top header&lt;/h5&gt;
+                    &lt;h4&gt;header&lt;/h4&gt;
+                    &lt;p&gt;text herer..&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class="col-6 col-md"&gt;
+                &lt;div class="jumbotron-img-list-card" style="background: url(...)"&gt;
+                    &lt;h5&gt;top header&lt;/h5&gt;
+                    &lt;h4&gt;header&lt;/h4&gt;
+                    &lt;p&gt;text herer..&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                    </code>
+                </pre>
+
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <h5 class="m-0 bg-dark text-white p-2">css</h5>
+                <pre class="code-section">
+                    <code>
+    .jumbotron-img-list{
+        border-radius: 0;
+        background-color: #007bff;
+        padding: 3rem;
+        color: #fff;
+    }
+
+    .jumbotron-img-list-text-card h4{
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+
+    .jumbotron-img-list-text-card p{
+        font-size: 1.25rem;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    .jumbotron-img-list-card{
+        padding: 0.5rem;
+    }
+
+    .jumbotron-img-list-card h5{
+        display: inline-block;
+        padding: 0.5rem;
+        font-size: 80%;
+        text-transform: uppercase;
+        background: rgba(0,0,0,0.4);
+    }
+
+    .jumbotron-img-list-card p{
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+                    </code>
+                </pre>
+                <h5 class="m-0 bg-dark text-white p-2">examples</h5>
+                <div>
+                    <div class="jumbotron-img-list">
+                        <div class="row">
+                            <div class="col-6 col-md">
+                                <div class="jumbotron-img-list-text-card">
+                                    <h4>header</h4>
+                                    <p>Far far away, behind the word mountains, far from the countries
+                                        Vokalia and</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md">
+                                <div class="jumbotron-img-list-card"
+                                     style="background: url(./assets/img/400x600-aquarium.jpg)">
+                                    <section>
+                                        <h5>Illustration</h5>
+                                        <h4>45 Minimal Works space Rooms for Web Savvys</h4>
+                                        <p>Far far away, behind the word mountains, far from the countries
+                                            Vokalia and</p>
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md">
+                                <div class="jumbotron-img-list-card"
+                                     style="background: url(./assets/img/400x600-forest.jpg)">
+                                    <h5>Illustration</h5>
+                                    <h4>45 Minimal Works space Rooms for Web Savvys</h4>
+                                    <p>Far far away, behind the word mountains, far from the countries
+                                        Vokalia and</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md">
+                                <div class="jumbotron-img-list-card"
+                                     style="background: url(./assets/img/400x600-sea.jpg)">
+                                    <h5>Illustration</h5>
+                                    <h4>45 Minimal Works space Rooms for Web Savvys</h4>
+                                    <p>Far far away, behind the word mountains, far from the countries
+                                        Vokalia and</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </div>
 
         <!-- side bar -->
@@ -345,6 +586,11 @@
                     <a href="#text-switch" class="w-100">Text-switch</a>
                     <a href="#flex-gallery" class="w-100">Flex-gallery</a>
                     <a href="#jumbotron-with-gallery" class="w-100">Jumbotron-with-gallery</a>
+                    <!--
+                    <a href="#timeline" class="w-100">Timeline</a>
+                    -->
+                    <a href="#img-zoom" class="w-100">Img-zoom</a>
+                    <a href="#jumbotron-img-list" class="w-100">Jumbotron-img-list</a>
                 </div>
             </div>
         </div>

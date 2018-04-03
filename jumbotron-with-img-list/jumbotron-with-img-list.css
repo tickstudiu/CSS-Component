@@ -1,0 +1,41 @@
+.jumbotron-img-list{
+    border-radius: 0;
+    background-color: #007bff;
+    padding: 3rem;
+    color: #fff;
+}
+
+.jumbotron-img-list-text-card h4{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.jumbotron-img-list-text-card p{
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.jumbotron-img-list-card{
+    padding: 0.5rem;
+    transition: all 0.75s;
+}
+
+.jumbotron-img-list-card:hover{
+    box-shadow: 0 10px 9px rgba(0,0,0,0.3);
+    transform: translateY(-4%);
+}
+
+.jumbotron-img-list-card h5{
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 80%;
+    text-transform: uppercase;
+    background: rgba(0,0,0,0.4);
+}
+
+.jumbotron-img-list-card p{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
